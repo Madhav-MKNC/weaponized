@@ -139,8 +139,8 @@ def reverse():
 
 def pwning():
     print("""
-        \033[32m[2]  \033[36mBuffer Overflow Scan
-        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[1]  \033[36mBuffer Overflow Scan
+        \033[32m[2]  \033[36mAdd more tools
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -154,6 +154,44 @@ def pwning():
         menu()
     else :
         menu()
+
+# Forensics
+#  - Normal forensic scan It will include a script which will search that flag format by trying combinations like string picture, exif tool it, trying to rectify hexedit(I will make hexedit part - $root), think more
+#  - Image Forensics Tool
+#  - Disk Forensics Tool (Autopsy)
+#  Think more
+
+def forensic():
+    print("""
+        \033[32m[1]  \033[36mForensics Scan
+        \033[32m[2]  \033[36mAutopsy
+        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[99] \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        forenscan()
+    elif choice == "2":
+        clearScr()
+        moretools()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
