@@ -129,8 +129,31 @@ def reverse():
     else :
         menu()
 
+# For PWN
+#
+# - Buffer Overflow Script
+#       - Custom Overflow
+#       - Bruteforce
+# - some pwn related tools
+#
 
-
+def pwning():
+    print("""
+        \033[32m[2]  \033[36mBuffer Overflow Scan
+        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[99] \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        bscan()
+    elif choice == "2":
+        clearScr()
+        moretools()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
 
 
 
