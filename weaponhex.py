@@ -48,6 +48,10 @@ Logo="""\033[36m
                \033[91m[!] \033[32mThis Tool is Only For Educational Purpose
                Please Don\'t use for \033[91mAny illegal Activity [!]
     \033[97m """
+
+#         STRUCTURE OF THIS TOOL
+#   MAIN MENU -> CATEGORY MENU -> TOOL MENU
+
 def menu():
     print(Logo + """\033[0m
         \033[36m[+] \033[32mThis Tool Must Run as a Root..\033[36m[+]\033[32m
@@ -97,6 +101,36 @@ def menu():
 
 
 # we have to complete each function one by one
+#
+# For REVERSE
+#  - Quick SCAN includes STRING, ltrace, etc. Integrate it with python Options - Scan, back; Take argument as file. Print instruction that file should be in same directory
+#  - Binany ninja - menu option Install, Run, Back
+#  - Ghidra - same as binary ninja
+
+def reverse():
+    print("""
+        \033[32m[1]  \033[36mQuick Scan
+        \033[32m[2]  \033[36mBinary Ninja
+        \033[32m[3]  \033[36mGhidra
+        \033[32m[99] \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        rscan()
+    elif choice == "2":
+        clearScr()
+        bninja()
+    elif choice == "3":
+        clearScr()
+        ghidr()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
+
+
+
 
 
 
