@@ -50,7 +50,7 @@ Logo="""\033[36m
     \033[97m """
 
 #         STRUCTURE OF THIS TOOL
-#   MAIN MENU -> CATEGORY MENU -> TOOL MENU
+#   MAIN MENU -> CATEGORY MENU -> TOOL MENU (with instruction on each menu)
 
 def menu():
     print(Logo + """\033[0m
@@ -98,7 +98,6 @@ def menu():
         print("\033[31mWrong Input...!!")
         time.sleep(3)
         menu()
-
 
 # we have to complete each function one by one
 #
@@ -238,21 +237,29 @@ def web():
     else :
         menu()
 
+# OSINT
+# There are some popular tools of OSINT, refer those tools here.
+#
+# Also try to use api here, if it can work.
+#
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def osint():
+    print("""
+        \033[32m[1]  \033[36mOSINT Scan
+        \033[32m[1]  \033[36mSome Tools
+        \033[32m[1]  \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        oscan()
+    elif choice == "2":
+        clearScr()
+        mrtools()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
 
 def clearScr():
     if system() == 'Linux':
@@ -284,6 +291,3 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(" Terminating ..!!!")
         time.sleep(1)
-
-
-
