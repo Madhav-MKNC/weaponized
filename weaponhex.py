@@ -180,6 +180,41 @@ def forensic():
     else :
         menu()
 
+# CRYPTOGRAPHY
+# - Crypto Scan bruteforcing with popular encryption like base64
+# - vigenere
+# - caesar
+# - some popular and easy to implement encryption decryption scripts
+# - RSA tool from github
+# - think more
+
+def crypto():
+    print("""
+        \033[32m[1]  \033[36mCrypto Scan
+        \033[32m[2]  \033[36mVigenere
+        \033[32m[3]  \033[36mCaesar
+        \033[32m[4]  \033[36mMore Tools
+        \033[32m[99] \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        cryscan()
+    elif choice == "2":
+        clearScr()
+        vigenere()
+    elif choice == "3":
+        clearScr()
+        caesar()
+    elif choice == "4":
+        clearScr()
+        moretool()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
+
+
 
 
 
