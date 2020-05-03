@@ -149,7 +149,7 @@ def pwning():
         bscan()
     elif choice == "2":
         clearScr()
-        moretools()
+        moretool()
     elif choice == "99":
         menu()
     else :
@@ -174,7 +174,7 @@ def forensic():
         forenscan()
     elif choice == "2":
         clearScr()
-        moretools()
+        mretools()
     elif choice == "99":
         menu()
     else :
@@ -209,6 +209,30 @@ def crypto():
     elif choice == "4":
         clearScr()
         moretool()
+    elif choice == "99":
+        menu()
+    else :
+        menu()
+
+# Web Attack
+# Somewhere I have seen that curl helps in some challenges. Try implementing it. Try making script to steal cookies
+# Add tools here like burp wireshark, etc, see kaumodaki web attack part.
+#
+
+def web():
+    print("""
+        \033[32m[1]  \033[36mSelfmade WebScript
+        \033[32m[2]  \033[36mBurp Suite
+        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[99] \033[36mBack
+        """)
+    choice = input("\033[35mEnter your choice =>>\033[32m")
+    if choice == "1":
+        clearScr()
+        webscan()
+    elif choice == "2":
+        clearScr()
+        mortools()
     elif choice == "99":
         menu()
     else :
