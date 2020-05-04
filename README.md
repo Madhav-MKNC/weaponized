@@ -42,7 +42,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 
 #### This Tool Must Run As ROOT !!!
 
-    ```
+    
     root@linux:~git clone https://github.com/CybSec-NITW/WeaponHEX.git
     
     root@linux:~chmod -R 755 WeaponHEX && cd WeaponHEX
@@ -50,13 +50,13 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
     root@linux:~sudo pip3 install -r requirement.txt
     
     root@linux:~sudo ./install.sh
-    ```
+    
 
  After Following All Steps Just Type In Terminal 
  
-    ```
+    
     root@linux:~sudo weaponhex
-    ``` 
+    
 
 #### Some tool used in kaumodaki By below authors :
 [theretools](https://github.com/therelinks)
