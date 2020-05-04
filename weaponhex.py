@@ -245,14 +245,14 @@ def web():
 
 def osint():
     print("""
-        \033[32m[1]  \033[36mOSINT Scan
+        \033[32m[1]  \033[36mSocial Scan
         \033[32m[1]  \033[36mSome Tools
         \033[32m[1]  \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
     if choice == "1":
         clearScr()
-        oscan()
+        soscan()
     elif choice == "2":
         clearScr()
         mrtools()
@@ -260,6 +260,11 @@ def osint():
         menu()
     else :
         menu()
+        
+def soscan():
+    print("\033[32mSocial Scan Tool is a tool which scans username on most of the popular social media websites.")
+    usname = input("\033[35mEnter username =>>\033[32m")
+    os.system("./socialscan.sh " + usname + " -fu")
 
 def clearScr():
     if system() == 'Linux':
@@ -271,13 +276,13 @@ if __name__ == "__main__":
     try:
         if system() == 'Linux':
             if path.exists("/home/"):
-                os.chdir("/home/")
+                os.chdir("/home/groot/Desktop")
                 if os.path.isdir('WeaponHEX'):
-                    os.chdir("/home/WeaponHEX/")
+                    os.chdir("/home/groot/Desktop/WeaponHEX/")
                     menu()
                 else :
                     os.system("mkdir WeaponHEX")
-                    os.chdir("/home/WeaponHEX/")
+                    os.chdir("/home/groot/Desktop/WeaponHEX/")
                     menu()
         elif path.exists('/data'):
             os.chdir("data/data/com.termux/files/home/")
