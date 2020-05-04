@@ -13,7 +13,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 ![WeaponHEX](https://imgur.com/some123.jpg)
 
 ### Reverse Engineering
-- Wuick Scan
+- Quick Scan
 - Binary Ninja
 - Ghidra
 - More tools
