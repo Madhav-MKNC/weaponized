@@ -33,7 +33,7 @@ from xml.dom import minidom
 from optparse import OptionParser
 from time import sleep
 from platform import system
-Logo="""\033[36m
+Logo="""\033[33m
 
 ██╗    ██╗███████╗ █████╗ ██████╗  ██████╗ ███╗   ██╗    ██╗  ██╗███████╗██╗  ██╗
 ██║    ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗████╗  ██║    ██║  ██║██╔════╝╚██╗██╔╝
@@ -41,7 +41,7 @@ Logo="""\033[36m
 ██║███╗██║██╔══╝  ██╔══██║██╔═══╝ ██║   ██║██║╚██╗██║    ██╔══██║██╔══╝   ██╔██╗
 ╚███╔███╔╝███████╗██║  ██║██║     ╚██████╔╝██║ ╚████║    ██║  ██║███████╗██╔╝ ██╗
  ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-           【This】 【Tool】 【is】【Created】 【By】 【CybSec NITW】
+           \033[36m【This】 【Tool】 【is】【Created】 【By】 【CybSec NITW】
            
                \033[33m[+] https://github.com/CybSec-NITW [+]
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
     try:
         if system() == 'Linux':
             if path.exists("/home/"):
-                os.chdir("/home")
+                os.chdir("/home/")
                 if os.path.isdir('WeaponHEX'):
                     os.chdir("/home/WeaponHEX/")
                     menu()
