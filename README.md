@@ -58,7 +58,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
     root@linux:~sudo weaponhex
     
 
-#### Some tool used in kaumodaki By below authors :
+#### Some tool used in weaponhex By below authors :
 [theretools](https://github.com/therelinks)
 
 ## [MIT License](https://raw.githubusercontent.com/CybSec-NITW/WeaponHEX/master/LICENSE)
