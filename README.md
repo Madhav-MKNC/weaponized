@@ -10,7 +10,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 <img src ="https://img.shields.io/badge/Important-notice-red" />
 <h4>Use Only For Educational Purpose.Don't Use for illegal Activity</h4>
 
-![WeaponHEX](https://imgur.com/some123.jpg)
+![WeaponHEX](https://imgur.com/mHjdokH.png)
 
 ### Reverse Engineering
 - Quick Scan
