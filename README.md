@@ -35,8 +35,9 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - sqlmap
 - more tools
 ### OSINT
-- OSINT Scan 
-- Some Tools
+- Social Scan 
+- DataSploit
+- ReconSpider
 
 ## Installation in Linux :
 
