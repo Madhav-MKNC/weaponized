@@ -108,9 +108,14 @@ def menu():
 
 def reverse():
     print("""
-        \033[32m[1]  \033[36mQuick Scan
-        \033[32m[2]  \033[36mBinary Ninja
-        \033[32m[3]  \033[36mGhidra
+        \033[32m[1]  \033[36mReverse Scan
+        \033[32m[2]  \033[36mGhidra
+        \033[32m[3]  \033[36mBinary Ninja
+        \033[32m[4]  \033[36mIDA
+        \033[32m[4]  \033[36muncompyle6
+        \033[32m[4]  \033[36mgdb
+        \033[32m[4]  \033[36mradare2
+        \033[32m[4]  \033[36mapktool
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -138,8 +143,13 @@ def reverse():
 
 def pwning():
     print("""
-        \033[32m[1]  \033[36mBuffer Overflow Scan
-        \033[32m[2]  \033[36mAdd more tools
+        \033[32m[1]  \033[36mPwn Scan
+        \033[32m[2]  \033[36mpwntools
+        \033[32m[4]  \033[36mpwndbg
+        \033[32m[4]  \033[36mIPython
+        \033[32m[4]  \033[36mwelpwn
+        \033[32m[4]  \033[36mglibc-all-in-one
+        \033[32m[4]  \033[36mAn important link
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -163,8 +173,13 @@ def pwning():
 def forensic():
     print("""
         \033[32m[1]  \033[36mForensics Scan
-        \033[32m[2]  \033[36mAutopsy
-        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[2]  \033[36mhexedit
+        \033[32m[3]  \033[36mbinwalk
+        \033[32m[4]  \033[36mexiftool
+        \033[32m[4]  \033[36mSteganography Tools
+        \033[32m[4]  \033[36mPNGcheck
+        \033[32m[4]  \033[36mPDFparser
+        \033[32m[4]  \033[36mAutopsy
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -189,10 +204,13 @@ def forensic():
 
 def crypto():
     print("""
-        \033[32m[1]  \033[36mCrypto Scan
-        \033[32m[2]  \033[36mVigenere
-        \033[32m[3]  \033[36mCaesar
-        \033[32m[4]  \033[36mMore Tools
+        \033[32m[1]  \033[36mRSACTFTool
+        \033[32m[2]  \033[36mFeatherDuster
+        \033[32m[3]  \033[36mXORTool
+        \033[32m[4]  \033[36mHashCat
+        \033[32m[4]  \033[36mJohnTheRipper
+        \033[32m[4]  \033[36mCryptool
+        \033[32m[4]  \033[36mAn important link
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -220,9 +238,14 @@ def crypto():
 
 def web():
     print("""
-        \033[32m[1]  \033[36mSelfmade WebScript
-        \033[32m[2]  \033[36mBurp Suite
-        \033[32m[3]  \033[36mAdd more tools
+        \033[32m[1]  \033[36mBurp Suite
+        \033[32m[2]  \033[36mWireshark
+        \033[32m[2]  \033[36msqlmap
+        \033[32m[2]  \033[36mdsniff
+        \033[32m[2]  \033[36msubbrute
+        \033[32m[2]  \033[36mgobuster
+        \033[32m[2]  \033[36mw3af
+        \033[32m[3]  \033[36mAXSSer
         \033[32m[99] \033[36mBack
         """)
     choice = input("\033[35mEnter your choice =>>\033[32m")
@@ -316,7 +339,7 @@ if __name__ == "__main__":
     try:
         if system() == 'Linux':
             if path.exists("/home/"):
-                os.chdir("/home")
+                os.chdir("/home/")
                 if os.path.isdir('WeaponHEX'):
                     os.chdir("/home/WeaponHEX/")
                     menu()
