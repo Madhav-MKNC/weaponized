@@ -327,7 +327,7 @@ def reconspider():
         osint()
     else :
         menu()
-    
+            
 
 def clearScr():
     if system() == 'Linux':
@@ -339,13 +339,13 @@ if __name__ == "__main__":
     try:
         if system() == 'Linux':
             if path.exists("/home/"):
-                os.chdir("/home/")
+                os.chdir("/home/groot/Desktop")
                 if os.path.isdir('WeaponHEX'):
-                    os.chdir("/home/WeaponHEX/")
+                    os.chdir("/home/groot/Desktop/WeaponHEX/")
                     menu()
                 else :
                     os.system("mkdir WeaponHEX")
-                    os.chdir("/home/WeaponHEX/")
+                    os.chdir("/home/groot/Desktop/WeaponHEX/")
                     menu()
         elif path.exists('/data'):
             os.chdir("data/data/com.termux/files/home/")
