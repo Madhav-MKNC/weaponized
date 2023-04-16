@@ -35,70 +35,52 @@ from optparse import OptionParser
 from time import sleep
 from platform import system
 
-Logo="""\033[33m
+# from scripts
+from scripts.constants import *
+from scripts.utils import clearScreen, printScreen
 
-██╗    ██╗███████╗ █████╗ ██████╗  ██████╗ ███╗   ██╗    ██╗  ██╗███████╗██╗  ██╗
-██║    ██║██╔════╝██╔══██╗██╔══██╗██╔═══██╗████╗  ██║    ██║  ██║██╔════╝╚██╗██╔╝
-██║ █╗ ██║█████╗  ███████║██████╔╝██║   ██║██╔██╗ ██║    ███████║█████╗   ╚███╔╝
-██║███╗██║██╔══╝  ██╔══██║██╔═══╝ ██║   ██║██║╚██╗██║    ██╔══██║██╔══╝   ██╔██╗
-╚███╔███╔╝███████╗██║  ██║██║     ╚██████╔╝██║ ╚████║    ██║  ██║███████╗██╔╝ ██╗
- ╚══╝╚══╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
-           \033[36m【This】 【Tool】 【is】【Created】 【By】 【CybSec NITW】
-           
-               \033[33m[+] https://github.com/CybSec-NITW [+]
-
-               \033[91m[!] \033[32mThis Tool is Only For Educational Purpose
-               Please Don\'t use for \033[91mAny illegal Activity [!]
-    \033[97m """
 
 #         STRUCTURE OF THIS TOOL
 #   MAIN MENU -> CATEGORY MENU -> TOOL MENU (with instruction on each menu)
 
 def menu():
-    print(Logo + """\033[0m
-        \033[36m[+] \033[32mThis Tool Must Run as a Root..\033[36m[+]\033[32m
-        [01] \033[36mReverse Engineering \033[32m
-        [02] \033[36mPwning \033[32m
-        [03] \033[36mForensics \033[32m
-        [04] \033[36mCryptography \033[32m
-        [05] \033[36mWeb Exploitation \033[32m
-        [06] \033[36mOSINT \033[32m
-        [99] \033[36mExit
-        """)
+    print(BANNER)
+    print(MENU)
 
-    choice = input("\033[35mEnter your choice  =>> \033[32m")
-    if choice == "1" or choice == "01":
-        clearScr()
-        print(Logo)
-        reverse()
-    elif choice == "2" or choice == "02":
-        clearScr()
-        print(Logo)
-        pwning()
-    elif choice == "3" or choice == "03":
-        clearScr()
-        print(Logo)
-        forensic()
-    elif choice == "4" or choice == "04":
-        clearScr()
-        print(Logo)
-        crypto()
-    elif choice == "5" or choice == "05":
-        clearScr()
-        print(Logo)
-        web()
-    elif choice == "6" or choice == "06":
-        clearScr()
-        print(Logo)
-        osint()
-    elif choice == "99" :
-        clearScr(), sys.exit()
-        exit()
-    elif choice == "":
+    choice = input(f"{PURPLE} Enter your choice  =>> {GREEN}")
+
+    if not choice.isnumeric():
+        print(RED, "invalid input", WHITE)
         menu()
+
+    else: 
+        choice = int(choice)
+        printScreen()
+
+    if choice == 1:
+        reverse()
+
+    elif choice == 2:
+        pwning()
+
+    elif choice == 3:
+        forensic()
+
+    elif choice == 4:
+        crypto()
+        
+    elif choice == 5:
+        web()
+
+    elif choice == 6:
+        osint()
+
+    elif choice == 99:
+        print(GREEN, "[Exitting]", WHITE)
+        exit()
+    
     else:
-        print("\033[31mWrong Input...!!")
-        time.sleep(3)
+        print(RED, "invalid input", WHITE)
         menu()
 
 # we have to complete each function one by one
@@ -361,3 +343,6 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print(" Terminating ..!!!")
         time.sleep(1)
+
+if __name__ == "__main__":
+    print(Logo)
