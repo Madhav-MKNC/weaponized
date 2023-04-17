@@ -116,7 +116,13 @@ WEB_MENU = f"""
     {WHITE}"""
 
 
-
+OSINT_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Social Scan
+    {GREEN} [2]  {BLUE} DataSploit
+    {GREEN} [3]  {BLUE} ReconSpider
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
 
 
 
