@@ -102,10 +102,32 @@ CRYPTO_MENU = f"""
     {WHITE}"""
 
 
+WEB_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Burp Suite
+    {GREEN} [2]  {BLUE} Wireshark
+    {GREEN} [3]  {BLUE} sqlmap
+    {GREEN} [4]  {BLUE} dsniff
+    {GREEN} [5]  {BLUE} subbrute
+    {GREEN} [6]  {BLUE} gobuster
+    {GREEN} [7]  {BLUE} w3af
+    {GREEN} [8]  {BLUE} AXSSer
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
+
+
+OSINT_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Social Scan
+    {GREEN} [2]  {BLUE} DataSploit
+    {GREEN} [3]  {BLUE} ReconSpider
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
+
 
 
 if __name__ == "__main__":
 
-    for i in [BANNER, MENU, REVERSE_MENU, PWNING_MENU, FORENSIC_MENU]:
+    for i in [BANNER, MENU, REVERSE_MENU, PWNING_MENU, FORENSIC_MENU, CRYPTO_MENU, WEB_MENU, OSINT_MENU]:
         print(i)
 

@@ -54,7 +54,7 @@ def menu():
         time.sleep(2)
         menu()
 
-    if choice == "1": reverse()
+    elif choice == "1": reverse()
 
     elif choice == "2": pwning()
 
@@ -88,7 +88,7 @@ def reverse():
         time.sleep(2)
         menu()
 
-    if choice == "1": rscan()
+    elif choice == "1": rscan()
 
     elif choice == "2": bninja()
 
@@ -128,7 +128,7 @@ def pwning():
         time.sleep(2)
         menu()
 
-    if choice == "1": pwnscan()
+    elif choice == "1": pwnscan()
 
     elif choice == "2": pwn_tools()
 
@@ -165,7 +165,7 @@ def forensic():
         time.sleep(2)
         menu()
 
-    if choice == "1": forenscan()
+    elif choice == "1": forenscan()
 
     elif choice == "2": hexedit()
 
@@ -205,7 +205,7 @@ def crypto():
         time.sleep(2)
         menu()
 
-    if choice == "1": cryscan() # RSACTFTool
+    elif choice == "1": cryscan() # RSACTFTool
 
     elif choice == "2": vigenere() # feather duster
 
@@ -230,28 +230,36 @@ def crypto():
 #
 
 def web():
-    print("""
-        \033[32m[1]  \033[36mBurp Suite
-        \033[32m[2]  \033[36mWireshark
-        \033[32m[2]  \033[36msqlmap
-        \033[32m[2]  \033[36mdsniff
-        \033[32m[2]  \033[36msubbrute
-        \033[32m[2]  \033[36mgobuster
-        \033[32m[2]  \033[36mw3af
-        \033[32m[3]  \033[36mAXSSer
-        \033[32m[99] \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        webscan()
-    elif choice == "2":
-        clearScr()
-        mortools()
-    elif choice == "99":
+    print(WEB_MENU)
+    
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
+
+    elif choice == "1": burpsuit()
+
+    elif choice == "2": wireshark()
+
+    elif choice == "3": sqlmap()
+
+    elif choice == "4": dsniff()
+
+    elif choice == "5": subbrute()
+
+    elif choice == "6": gobuster()
+
+    elif choice == "7": w3af()
+
+    elif choice == "8": AXSSer()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
 
 # OSINT
 # There are some popular tools of OSINT, refer those tools here.
@@ -260,27 +268,31 @@ def web():
 #
 
 def osint():
-    print("""
-        \033[32m[1]  \033[36mSocial Scan
-        \033[32m[2]  \033[36mDataSploit
-        \033[32m[3]  \033[36mReconSpider
-        \033[32m[99]  \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        soscan()
-    elif choice == "2":
-        clearScr()
-        dtsploit()
-    elif choice == "3":
-        clearScr()
-        reconspider()
-    elif choice == "99":
+    print(OSINT_MENU)
+
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
-        
+
+    elif choice == "1": social_scan()
+
+    elif choice == "2": data_sploit()
+
+    elif choice == "3": recon_spider()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
+
+# ============================== MENU ENDS HERE ==============================
+
+
+
 def soscan():
     print("\033[32mSocial Scan Tool is a tool which scans username on most of the popular social media websites.")
     usname = input("\033[35mEnter username =>>\033[32m")
