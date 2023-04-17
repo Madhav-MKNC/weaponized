@@ -195,33 +195,34 @@ def forensic():
 # - think more
 
 def crypto():
-    print("""
-        \033[32m[1]  \033[36mRSACTFTool
-        \033[32m[2]  \033[36mFeatherDuster
-        \033[32m[3]  \033[36mXORTool
-        \033[32m[4]  \033[36mHashCat
-        \033[32m[4]  \033[36mJohnTheRipper
-        \033[32m[4]  \033[36mCryptool
-        \033[32m[4]  \033[36mAn important link
-        \033[32m[99] \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        cryscan()
-    elif choice == "2":
-        clearScr()
-        vigenere()
-    elif choice == "3":
-        clearScr()
-        caesar()
-    elif choice == "4":
-        clearScr()
-        moretool()
-    elif choice == "99":
+    print(CRYPTO_MENU)
+
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "4", "5", "6", "7", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
+
+    if choice == "1": cryscan() # RSACTFTool
+
+    elif choice == "2": vigenere() # feather duster
+
+    elif choice == "3": caesar() # XOR tool
+
+    elif choice == "4": hashcat()
+
+    elif choice == "5": john()
+
+    elif choice == "6": cryptool()
+
+    elif choice == "7": an_important_link()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
 
 # Web Attack
 # Somewhere I have seen that curl helps in some challenges. Try implementing it. Try making script to steal cookies

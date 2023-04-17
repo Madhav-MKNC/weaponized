@@ -89,6 +89,17 @@ FORENSIC_MENU = f"""
     {WHITE}"""
 
 
+CRYPTO_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} RSACTFTool
+    {GREEN} [2]  {BLUE} FeatherDuster
+    {GREEN} [3]  {BLUE} XORTool
+    {GREEN} [4]  {BLUE} HashCat
+    {GREEN} [5]  {BLUE} JohnTheRipper
+    {GREEN} [6]  {BLUE} Cryptool
+    {GREEN} [7]  {BLUE} An important link
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
 
 
 
