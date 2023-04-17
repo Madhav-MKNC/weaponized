@@ -44,7 +44,7 @@ MENU = f"""
     {GREEN} [04] {BLUE} Cryptography 
     {GREEN} [05] {BLUE} Web Exploitation 
     {GREEN} [06] {BLUE} OSINT 
-    {GREEN} [99] {GREEN} Exit
+    {GREEN} [99] {RED} Exit
     {WHITE}"""
 
 
@@ -62,15 +62,39 @@ REVERSE_MENU = f"""
     {WHITE}"""
 
 
-PWNING = f"""
+PWNING_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Pwn Scan
+    {GREEN} [2]  {BLUE} pwntools
+    {GREEN} [3]  {BLUE} pwndbg
+    {GREEN} [4]  {BLUE} IPython
+    {GREEN} [5]  {BLUE} welpwn
+    {GREEN} [6]  {BLUE} glibc-all-in-one
+    {GREEN} [7]  {BLUE} An important link
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
+
+
+FORENSIC_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Forensics Scan
+    {GREEN} [2]  {BLUE} hexedit
+    {GREEN} [3]  {BLUE} binwalk
+    {GREEN} [4]  {BLUE} exiftool
+    {GREEN} [5]  {BLUE} Steganography Tools
+    {GREEN} [6]  {BLUE} PNGcheck
+    {GREEN} [7]  {BLUE} PDFparser
+    {GREEN} [8]  {BLUE} Autopsy
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
 
 
 
-    """
+
 
 
 if __name__ == "__main__":
 
-    print(BANNER)
-    print(MENU)
+    for i in [BANNER, MENU, REVERSE_MENU, PWNING_MENU, FORENSIC_MENU]:
+        print(i)
 

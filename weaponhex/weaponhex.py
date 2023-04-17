@@ -37,19 +37,16 @@ from optparse import OptionParser
 from time import sleep
 from platform import system
 
+
 # from scripts
 from scripts.constants import *
 from scripts.utils import clearScreen, printScreen
-
-
-#         STRUCTURE OF THIS TOOL
-#   MAIN MENU -> CATEGORY MENU -> TOOL MENU (with instruction on each menu)
 
 def menu():
     print(BANNER)
     print(MENU)
 
-    choice = input(f"{PURPLE} [+] Enter your choice  =>> {GREEN}").strip()
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
     printScreen()
 
     if choice not in ["1", "2", "3", "4", "5", "6", "99"]:
@@ -78,11 +75,12 @@ def menu():
 #  - Quick SCAN includes STRING, ltrace, etc. Integrate it with python Options - Scan, back; Take argument as file. Print instruction that file should be in same directory
 #  - Binany ninja - menu option Install, Run, Back
 #  - Ghidra - same as binary ninja
+# 
 
 def reverse():
     print(REVERSE_MENU)
 
-    choice = input(f"{PURPLE} [+] Enter your choice  =>> {GREEN}").strip()
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
     printScreen()
     
     if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "0", "99"]:
@@ -120,57 +118,73 @@ def reverse():
 #
 
 def pwning():
-    print("""
-        \033[32m[1]  \033[36mPwn Scan
-        \033[32m[2]  \033[36mpwntools
-        \033[32m[4]  \033[36mpwndbg
-        \033[32m[4]  \033[36mIPython
-        \033[32m[4]  \033[36mwelpwn
-        \033[32m[4]  \033[36mglibc-all-in-one
-        \033[32m[4]  \033[36mAn important link
-        \033[32m[99] \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        bscan()
-    elif choice == "2":
-        clearScr()
-        moretool()
-    elif choice == "99":
+    print(PWNING_MENU)
+    
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "4", "5", "6", "7", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
+
+    if choice == "1": pwnscan()
+
+    elif choice == "2": pwn_tools()
+
+    elif choice == "3": pwndbg()
+
+    elif choice == "4": IPython()
+
+    elif choice == "5": welpwn()
+
+    elif choice == "6": glibc()
+
+    elif choice == "7": an_important_link()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
 
 # Forensics
 #  - Normal forensic scan It will include a script which will search that flag format by trying combinations like string picture, exif tool it, trying to rectify hexedit(I will make hexedit part - $root), think more
 #  - Image Forensics Tool
 #  - Disk Forensics Tool (Autopsy)
 #  Think more
+# 
 
 def forensic():
-    print("""
-        \033[32m[1]  \033[36mForensics Scan
-        \033[32m[2]  \033[36mhexedit
-        \033[32m[3]  \033[36mbinwalk
-        \033[32m[4]  \033[36mexiftool
-        \033[32m[4]  \033[36mSteganography Tools
-        \033[32m[4]  \033[36mPNGcheck
-        \033[32m[4]  \033[36mPDFparser
-        \033[32m[4]  \033[36mAutopsy
-        \033[32m[99] \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        forenscan()
-    elif choice == "2":
-        clearScr()
-        mretools()
-    elif choice == "99":
+    print(FORENSIC_MENU)
+
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {WHITE}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
+
+    if choice == "1": forenscan()
+
+    elif choice == "2": hexedit()
+
+    elif choice == "3": binwalk()
+
+    elif choice == "4": exiftool()
+
+    elif choice == "5": steg_tools()
+
+    elif chioce == "6": PNGcheck()
+
+    elif choice == "7": PDFparser()
+
+    elif choice == "8": autospy()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
 
 # CRYPTOGRAPHY
 # - Crypto Scan bruteforcing with popular encryption like base64
