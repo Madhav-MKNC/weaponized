@@ -69,7 +69,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
     
     root@linux:~git clone https://github.com/CybSec-NITW/WeaponHEX.git
     
-    root@linux:~chmod -R 755 WeaponHEX && cd WeaponHEX/weaponhex
+    root@linux:~chmod -R 755 WeaponHEX && cd WeaponHEX/
     
     root@linux:~sudo pip3 install -r requirement.txt
     
