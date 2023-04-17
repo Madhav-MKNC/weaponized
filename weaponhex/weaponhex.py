@@ -42,6 +42,7 @@ from platform import system
 from scripts.constants import *
 from scripts.utils import clearScreen, printScreen
 
+
 def menu():
     print(BANNER)
     print(MENU)
@@ -68,14 +69,6 @@ def menu():
 
     elif choice == "99": Exit()
 
-
-# we have to complete each function one by one
-#
-# For REVERSE
-#  - Quick SCAN includes STRING, ltrace, etc. Integrate it with python Options - Scan, back; Take argument as file. Print instruction that file should be in same directory
-#  - Binany ninja - menu option Install, Run, Back
-#  - Ghidra - same as binary ninja
-# 
 
 def reverse():
     print(REVERSE_MENU)
@@ -109,14 +102,6 @@ def reverse():
     elif choice == "0": menu()
 
 
-# For PWN
-#
-# - Buffer Overflow Script
-#       - Custom Overflow
-#       - Bruteforce
-# - some pwn related tools
-#
-
 def pwning():
     print(PWNING_MENU)
     
@@ -146,13 +131,6 @@ def pwning():
 
     elif choice == "0": menu()
 
-
-# Forensics
-#  - Normal forensic scan It will include a script which will search that flag format by trying combinations like string picture, exif tool it, trying to rectify hexedit(I will make hexedit part - $root), think more
-#  - Image Forensics Tool
-#  - Disk Forensics Tool (Autopsy)
-#  Think more
-# 
 
 def forensic():
     print(FORENSIC_MENU)
@@ -186,14 +164,6 @@ def forensic():
     elif choice == "0": menu()
 
 
-# CRYPTOGRAPHY
-# - Crypto Scan bruteforcing with popular encryption like base64
-# - vigenere
-# - caesar
-# - some popular and easy to implement encryption decryption scripts
-# - RSA tool from github
-# - think more
-
 def crypto():
     print(CRYPTO_MENU)
 
@@ -223,11 +193,6 @@ def crypto():
 
     elif choice == "0": menu()
 
-
-# Web Attack
-# Somewhere I have seen that curl helps in some challenges. Try implementing it. Try making script to steal cookies
-# Add tools here like burp wireshark, etc, see kaumodaki web attack part.
-#
 
 def web():
     print(WEB_MENU)
@@ -260,12 +225,6 @@ def web():
 
     elif choice == "0": menu()
 
-
-# OSINT
-# There are some popular tools of OSINT, refer those tools here.
-#
-# Also try to use api here, if it can work.
-#
 
 def osint():
     print(OSINT_MENU)
@@ -359,5 +318,7 @@ if __name__ == "__main__":
         print(" Terminating ..!!!")
         time.sleep(1)
 
+
+
 if __name__ == "__main__":
-    print(Logo)
+    print(BANNER)
