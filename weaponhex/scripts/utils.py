@@ -1,16 +1,19 @@
 # helper functions for ../weaponhex.py
 
-from os import system as run
-from platform import platform as uname 
+import os 
 
 from constants import BANNER
 
 # clear screen
 def clearScreen():
-    run('cls' if 'win' in uname().lower() else 'clear')
+    os.system("cls" if os.name.lower() == "nt" else "clear")
 
 # clear screen and print banner
 def printScreen():
     clearScreen()
     print(BANNER)
 
+# Exit program
+def Exit():
+    print(f"{GREEN} [Exitting] {WHITE}")
+    exit()

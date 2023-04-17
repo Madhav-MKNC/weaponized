@@ -1,6 +1,8 @@
 ##!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
+
+
 import os
 import sys
 import argparse
@@ -47,41 +49,28 @@ def menu():
     print(BANNER)
     print(MENU)
 
-    choice = input(f"{PURPLE} Enter your choice  =>> {GREEN}")
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {GREEN}").strip()
+    printScreen()
 
-    if not choice.isnumeric():
-        print(RED, "invalid input", WHITE)
+    if choice not in ["1", "2", "3", "4", "5", "6", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
 
-    else: 
-        choice = int(choice)
-        printScreen()
+    if choice == "1": reverse()
 
-    if choice == 1:
-        reverse()
+    elif choice == "2": pwning()
 
-    elif choice == 2:
-        pwning()
+    elif choice == "3": forensic()
 
-    elif choice == 3:
-        forensic()
+    elif choice == "4": crypto()  
 
-    elif choice == 4:
-        crypto()
-        
-    elif choice == 5:
-        web()
+    elif choice == "5": web()
 
-    elif choice == 6:
-        osint()
+    elif choice == "6": osint()
 
-    elif choice == 99:
-        print(GREEN, "[Exitting]", WHITE)
-        exit()
-    
-    else:
-        print(RED, "invalid input", WHITE)
-        menu()
+    elif choice == "99": Exit()
+
 
 # we have to complete each function one by one
 #
@@ -91,31 +80,36 @@ def menu():
 #  - Ghidra - same as binary ninja
 
 def reverse():
-    print("""
-        \033[32m[1]  \033[36mReverse Scan
-        \033[32m[2]  \033[36mGhidra
-        \033[32m[3]  \033[36mBinary Ninja
-        \033[32m[4]  \033[36mIDA
-        \033[32m[4]  \033[36muncompyle6
-        \033[32m[4]  \033[36mgdb
-        \033[32m[4]  \033[36mradare2
-        \033[32m[4]  \033[36mapktool
-        \033[32m[99] \033[36mBack
-        """)
-    choice = input("\033[35mEnter your choice =>>\033[32m")
-    if choice == "1":
-        clearScr()
-        rscan()
-    elif choice == "2":
-        clearScr()
-        bninja()
-    elif choice == "3":
-        clearScr()
-        ghidr()
-    elif choice == "99":
+    print(REVERSE_MENU)
+
+    choice = input(f"{PURPLE} [+] Enter your choice  =>> {GREEN}").strip()
+    printScreen()
+    
+    if choice not in ["1", "2", "3", "4", "5", "6", "7", "8", "0", "99"]:
+        print(f"{RED} [-] '{choice}' is an invalid input {WHITE}")
+        time.sleep(2)
         menu()
-    else :
-        menu()
+
+    if choice == "1": rscan()
+
+    elif choice == "2": bninja()
+
+    elif choice == "3": ghidr()
+
+    elif choice == "4": IDA()
+
+    elif choice == "5": uncompyle6()
+
+    elif choice == "6": gdb()
+
+    elif choice == "7": radare2()
+
+    elif choice == "8": apktool()
+
+    elif choice == "99": Exit()
+
+    elif choice == "0": menu()
+
 
 # For PWN
 #
@@ -311,13 +305,7 @@ def reconspider():
         osint()
     else :
         menu()
-            
-
-def clearScr():
-    if system() == 'Linux':
-        os.system('clear')
-    if system() == 'Windows':
-        os.system('cls')
+    
 
 if __name__ == "__main__":
     try:

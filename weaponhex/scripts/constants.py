@@ -38,16 +38,35 @@ BANNER = f"""
 MENU = f"""
     {LGREEN} [+] This Tool Must Run as a Root..[+]
 
-    {GREEN} [01] {BLUE}Reverse Engineering 
-    {GREEN} [02] {BLUE}Pwning 
-    {GREEN} [03] {BLUE}Forensics 
-    {GREEN} [04] {BLUE}Cryptography 
-    {GREEN} [05] {BLUE}Web Exploitation 
-    {GREEN} [06] {BLUE}OSINT 
-    {GREEN} [99] {BLUE}Exit
+    {GREEN} [01] {BLUE} Reverse Engineering 
+    {GREEN} [02] {BLUE} Pwning 
+    {GREEN} [03] {BLUE} Forensics 
+    {GREEN} [04] {BLUE} Cryptography 
+    {GREEN} [05] {BLUE} Web Exploitation 
+    {GREEN} [06] {BLUE} OSINT 
+    {GREEN} [99] {GREEN} Exit
     {WHITE}"""
 
 
+REVERSE_MENU = f"""
+    {GREEN} [0]  {GREEN} Back
+    {GREEN} [1]  {BLUE} Reverse Scan
+    {GREEN} [2]  {BLUE} Ghidra
+    {GREEN} [3]  {BLUE} Binary Ninja
+    {GREEN} [4]  {BLUE} IDA
+    {GREEN} [5]  {BLUE} uncompyle6
+    {GREEN} [6]  {BLUE} gdb
+    {GREEN} [7]  {BLUE} radare2 
+    {GREEN} [8]  {BLUE} apktool
+    {GREEN} [99] {RED} Exit
+    {WHITE}"""
+
+
+PWNING = f"""
+
+
+
+    """
 
 
 if __name__ == "__main__":
