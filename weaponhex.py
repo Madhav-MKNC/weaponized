@@ -2,9 +2,18 @@
 # -*- coding: UTF-8 -*-
 
 
-from scripts.modules import *
-from scripts.constants import *
-from scripts.utils import clearScreen, printScreen
+# /utils/
+from utils.modules import *
+from utils.constants import *
+from utils.general import clearScreen, printScreen
+
+# /src/
+from src.reverse_tools import *
+from src.pwning_tools import *
+from src.forensic_tools import *
+from src.crypto_tools import *
+from src.web_tools import *
+from src.osint_tools import *
 
 
 def menu():
