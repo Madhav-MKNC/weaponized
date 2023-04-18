@@ -32,4 +32,3 @@ from urllib.parse import urlparse
 from xml.dom import minidom
 from optparse import OptionParser
 from time import sleep
-from platform import system
