@@ -26,3 +26,6 @@ def w3af():
 def AXSSer():
     pass 
 
+def link_web_tools():
+    pass
+    
