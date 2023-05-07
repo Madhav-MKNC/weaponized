@@ -1,16 +1,13 @@
-### WeaponHEX tool For CTF Players/Hackers/Pentesters By :- CybSec-NITW
-![](https://img.shields.io/github/license/CybSec-NITW/WeaponHEX)
-![](https://img.shields.io/github/issues/CybSec-NITW/WeaponHEX)
-![](https://img.shields.io/badge/Python-3-blue)
-![](https://img.shields.io/github/stars/CybSec-NITW/WeaponHEX)
+### weaponized tool For CTF contests By :- MKNC
 
-WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
+weaponized is all in one CTF tool which can be used in a jeopardy style CTF.
 
 
 <img src ="https://img.shields.io/badge/Important-notice-red" />
-<h4>Use Only For Educational Purpose.Don't Use for illegal Activity</h4>
+<h4>Use Only For Educational Purpose. Don't Use for any illegal Activity. Otherwise, you are responsible for your own activities.</h4>
 
-![WeaponHEX](https://imgur.com/mHjdokH.png)
+<!-- ![weaponized](https://imgur.com/mHjdokH.png) -->
+<!-- TODO: upload your own terminal screenshot here -->
 
 ### Reverse Engineering
 - Basic Reverse Scan 
@@ -21,6 +18,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - gdb
 - radare2
 - apktool - for android
+
 ### Pwning
 - Basic Pwn Scan
 - pwntools
@@ -29,6 +27,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - welpwn
 - glibc-all-in-one
 - link to common scripts of common challenge
+
 ### Forensics
 - scan with functioning of strings exiftool and grep to search flag format + file type, its all info
 - hexedit
@@ -41,6 +40,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - pdf parser
 - autopsy
 - script to rectify hexedit (full automated) (optional)
+
 ### Cryptography
 - RSACTFTool
 - FeatherDuster
@@ -48,6 +48,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - HashCat
 - JohnTheRipper
 - Cryptool
+
 ### Web Exploitation 
 - Burp
 - Wireshark
@@ -57,6 +58,7 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 - dirb/gobuster
 - w3af
 - XSSer
+
 ### OSINT
 - Social Scan 
 - DataSploit
@@ -67,25 +69,21 @@ WeaponHEX is all in one CTF tool which can be used in any jeopardy style CTF.
 #### This Tool Must Run As ROOT !!!
 
     
-    root@linux:~git clone https://github.com/CybSec-NITW/WeaponHEX.git
+    root@linux$ git clone https://github.com/Madhav-MKNC/weaponized.git
     
-    root@linux:~chmod -R 755 WeaponHEX && cd WeaponHEX/
+    root@linux$ chmod -R 755 weaponized && cd weaponized/
     
-    root@linux:~sudo pip3 install -r requirement.txt
+    root@linux$ sudo pip3 install -r requirements.txt
     
-    root@linux:~sudo ./install.sh
+    root@linux$ sudo ./install.sh
     
 
- After Following All Steps Just Type In Terminal 
+<p>After Following All Steps Just Type In Terminal </p>
  
-    
-    root@linux:~sudo weaponhex
-    
 
-#### Some tool used in weaponhex By below authors :
-[theretools](https://github.com/therelinks)
+    root@linux$ sudo weaponized
 
-## [MIT License](https://raw.githubusercontent.com/CybSec-NITW/WeaponHEX/master/LICENSE)
+## [MIT License](https://raw.githubusercontent.com/Madhav-MKNC/weaponized/master/LICENSE.md)
 
 #### Thank you..
 #### Don't Forget to share with Your Friends 
