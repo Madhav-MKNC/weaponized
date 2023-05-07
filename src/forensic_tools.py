@@ -25,3 +25,7 @@ def PDFparser():
 
 def autospy():
     pass
+    
+def link_forensic_tools():
+    pass
+    
