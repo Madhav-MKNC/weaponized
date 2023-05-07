@@ -26,4 +26,6 @@ def radare2():
 def apktool():
     pass
 
+def link_reverse_tools():
+    pass
 
