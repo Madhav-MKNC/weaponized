@@ -11,7 +11,8 @@ def data_sploit():
 def recon_spider():
     pass
 
-
+def link_osint_tools():
+    pass
 
 
 # ////////////////////////////
