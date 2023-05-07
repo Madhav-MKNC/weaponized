@@ -22,4 +22,7 @@ def glibc():
 
 def an_important_link():
     pass 
+    
+def link_pwning_tools():
+    pass
 
