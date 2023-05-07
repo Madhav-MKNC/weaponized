@@ -4,8 +4,8 @@
 
 # /utils/
 # from utils.modules import *
-from utils.constants import RED, WHITE, PURPLE
-from utils.general import printScreen
+from utils.constants import *
+from utils.general import *
 
 # /src/
 from src.reverse_tools import *
@@ -54,6 +54,7 @@ def reverse():
     elif choice == "6": gdb()
     elif choice == "7": radare2()
     elif choice == "8": apktool()
+    elif choice == "9": link_reverse_tools()
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
@@ -74,7 +75,7 @@ def pwning():
     elif choice == "4": IPython()
     elif choice == "5": welpwn()
     elif choice == "6": glibc()
-    elif choice == "7": an_important_link()
+    elif choice == "7": link_pwning_tools()
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
@@ -97,6 +98,7 @@ def forensic():
     elif chioce == "6": PNGcheck()
     elif choice == "7": PDFparser()
     elif choice == "8": autospy()
+    elif choice == "9": link_forensic_tools()
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
@@ -112,16 +114,13 @@ def crypto():
         time.sleep(2)
         menu()
         
-    # RSACTFTool
-    # feather duster
-    # XOR tool
     elif choice == "1": cryscan() # RSACTFTool
     elif choice == "2": vigenere() # feather duster
     elif choice == "3": caesar() # XOR tool
     elif choice == "4": hashcat()
     elif choice == "5": john()
     elif choice == "6": cryptool()
-    elif choice == "7": an_important_link() # this is something, will be updated
+    elif choice == "7": link_crypto_tools() 
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
@@ -144,6 +143,7 @@ def web():
     elif choice == "6": gobuster()
     elif choice == "7": w3af()
     elif choice == "8": AXSSer()
+    elif choice == "9": link_web_tools()
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
@@ -161,6 +161,7 @@ def osint():
     elif choice == "1": social_scan()
     elif choice == "2": data_sploit()
     elif choice == "3": recon_spider()
+    elif choice == "4": link_osint_tools()
     elif choice == "99": Exit()
     elif choice == "0": menu()
 
