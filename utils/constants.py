@@ -58,6 +58,7 @@ REVERSE_MENU = f"""
     {GREEN} [6]  {BLUE} gdb
     {GREEN} [7]  {BLUE} radare2 
     {GREEN} [8]  {BLUE} apktool
+    {GREEN} [9]  {BLUE} Link to other common Reverse Engineering tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
@@ -70,7 +71,7 @@ PWNING_MENU = f"""
     {GREEN} [4]  {BLUE} IPython
     {GREEN} [5]  {BLUE} welpwn
     {GREEN} [6]  {BLUE} glibc-all-in-one
-    {GREEN} [7]  {BLUE} An important link
+    {GREEN} [7]  {BLUE} Link to other common Pwning tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
@@ -85,6 +86,7 @@ FORENSIC_MENU = f"""
     {GREEN} [6]  {BLUE} PNGcheck
     {GREEN} [7]  {BLUE} PDFparser
     {GREEN} [8]  {BLUE} Autopsy
+    {GREEN} [9]  {BLUE} Link to other common Forensics tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
@@ -97,7 +99,7 @@ CRYPTO_MENU = f"""
     {GREEN} [4]  {BLUE} HashCat
     {GREEN} [5]  {BLUE} JohnTheRipper
     {GREEN} [6]  {BLUE} Cryptool
-    {GREEN} [7]  {BLUE} An important link
+    {GREEN} [7]  {BLUE} Link to other common Crypto tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
@@ -112,6 +114,7 @@ WEB_MENU = f"""
     {GREEN} [6]  {BLUE} gobuster
     {GREEN} [7]  {BLUE} w3af
     {GREEN} [8]  {BLUE} AXSSer
+    {GREEN} [9]  {BLUE} Link to other common Web tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
@@ -121,6 +124,7 @@ OSINT_MENU = f"""
     {GREEN} [1]  {BLUE} Social Scan
     {GREEN} [2]  {BLUE} DataSploit
     {GREEN} [3]  {BLUE} ReconSpider
+    {GREEN} [4]  {BLUE} Link to other common OSINT tools
     {GREEN} [99] {RED} Exit
     {WHITE}"""
 
