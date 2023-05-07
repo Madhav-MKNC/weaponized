@@ -18,6 +18,7 @@ weaponized is all in one CTF tool which can be used in a jeopardy style CTF.
 - gdb
 - radare2
 - apktool - for android
+- link to other common scripts
 
 ### Pwning
 - Basic Pwn Scan
@@ -26,28 +27,29 @@ weaponized is all in one CTF tool which can be used in a jeopardy style CTF.
 - IPython
 - welpwn
 - glibc-all-in-one
-- link to common scripts of common challenge
+- link to other common scripts
 
 ### Forensics
-- scan with functioning of strings exiftool and grep to search flag format + file type, its all info
+- forenscan
+- exiftool
 - hexedit
 - binwalk
-- exiftool
 - steganography
       - ZSteg
       - steghide and all stegano related tools
 - pngcheck
 - pdf parser
 - autopsy
-- script to rectify hexedit (full automated) (optional)
+- link to other common scripts
 
 ### Cryptography
-- RSACTFTool
-- FeatherDuster
-- XOR Tool
-- HashCat
-- JohnTheRipper
-- Cryptool
+- cryscan
+- vigenere
+- caesar
+- hashcat
+- john the ripper
+- cryptool
+- link to other common scripts
 
 ### Web Exploitation 
 - Burp
@@ -58,11 +60,13 @@ weaponized is all in one CTF tool which can be used in a jeopardy style CTF.
 - dirb/gobuster
 - w3af
 - XSSer
+- link to other common scripts
 
 ### OSINT
 - Social Scan 
 - DataSploit
 - ReconSpider
+- link to other common scripts
 
 ## Installation in Linux :
 
