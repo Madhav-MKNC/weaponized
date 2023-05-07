@@ -20,6 +20,6 @@ def john():
 def cryptool():
     pass
 
-def an_important_link():
+def link_crypto_tools():
     pass 
 
