@@ -3,7 +3,7 @@
 weaponized is all in one CTF tool which can be used in a jeopardy style CTF.
 
 
-<img src ="https://img.shields.io/badge/Important-notice-red" />
+
 <h4>Use Only For Educational Purpose. Don't Use for any illegal Activity. Otherwise, you are responsible for your own activities.</h4>
 
 <!-- ![weaponized](https://imgur.com/mHjdokH.png) -->
